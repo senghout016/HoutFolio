@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>DevFolio - Developer Portfolio Template</title>
+        <title>HoutFolio</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+        <meta content="senghout" name="senghout">
+        <meta content="senghout" name="senghout">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -22,6 +22,8 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+            
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -123,7 +125,7 @@
                                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <a class="btn" href="">Download CV</a>
+                            <a class="btn" href="./img/myresume.jpg" download>Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -293,10 +295,10 @@
                 <div class="row">
                     <div class="col-12">
                         <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Web Design</li>
-                            <li data-filter=".filter-2">Mobile Apps</li>
-                            <li data-filter=".filter-3">Graphic Design</li>
+                            <button id="mybutton" data-filter="*" class="filter-active">All</button>
+                            <button data-filter=".filter-1">Web Design</button>
+                            <button data-filter=".filter-2">Mobile Apps</button>
+                            <button data-filter=".filter-3">Graphic Design</button>
                         </ul>
                     </div>
                 </div>
@@ -368,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-bottom: 0;" class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div style="margin-bottom: 40px;" class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <a class="btn" href="https://www.behance.net/sounsenghout" target="_blank">See more on behance</a>
                 </div>
             </div>
@@ -389,7 +391,6 @@
                         <div class="footer-social">
                             <a href="https://t.me/Hout016" target="_blank"><i class="fab fa-telegram"></i></a>
                             <a href="https://www.facebook.com/seng.hout.3994885/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <!-- <a href="https://www.instagram.com/senghout_23/"  target="_blank"><i class="fab fa-instagram"></i></a> -->
                             <a href="https://www.linkedin.com/in/seng-hout-a1822314a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://www.behance.net/sounsenghout"  target="_blank"><i class="fab fa-behance"></i></a>
                         </div>
@@ -424,6 +425,12 @@
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         
+        
+        <!-- Auto click  -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+
+
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
@@ -432,3 +439,9 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+<script>
+    jQuery(function(){
+       jQuery('#mybutton').click();
+    });
+</script>
+    
